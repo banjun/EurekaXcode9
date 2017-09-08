@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04BAAF9C6DFAFD303DF0E75 /* Pods_EurekaXcode9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2366173FDEA87DED270B4C /* Pods_EurekaXcode9.framework */; };
 		EA4CF0ED1F6232F900A2B8EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CF0EC1F6232F900A2B8EE /* AppDelegate.swift */; };
 		EA4CF0EF1F6232F900A2B8EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CF0EE1F6232F900A2B8EE /* ViewController.swift */; };
 		EA4CF0F21F6232F900A2B8EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4CF0F01F6232F900A2B8EE /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0F65202D9114E9B372C287 /* Pods-EurekaXcode9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaXcode9.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EurekaXcode9/Pods-EurekaXcode9.debug.xcconfig"; sourceTree = "<group>"; };
+		A6CA3D30DFA2FC494DF2B37D /* Pods-EurekaXcode9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EurekaXcode9.release.xcconfig"; path = "Pods/Target Support Files/Pods-EurekaXcode9/Pods-EurekaXcode9.release.xcconfig"; sourceTree = "<group>"; };
+		BF2366173FDEA87DED270B4C /* Pods_EurekaXcode9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EurekaXcode9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4CF0E91F6232F900A2B8EE /* EurekaXcode9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurekaXcode9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4CF0EC1F6232F900A2B8EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4CF0EE1F6232F900A2B8EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04BAAF9C6DFAFD303DF0E75 /* Pods_EurekaXcode9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BE6A3275522B874621E8978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF2366173FDEA87DED270B4C /* Pods_EurekaXcode9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2F87832EC84230DE8A7D3DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D0F65202D9114E9B372C287 /* Pods-EurekaXcode9.debug.xcconfig */,
+				A6CA3D30DFA2FC494DF2B37D /* Pods-EurekaXcode9.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA4CF0E01F6232F900A2B8EE = {
 			isa = PBXGroup;
 			children = (
 				EA4CF0EB1F6232F900A2B8EE /* EurekaXcode9 */,
 				EA4CF0EA1F6232F900A2B8EE /* Products */,
+				B2F87832EC84230DE8A7D3DB /* Pods */,
+				5BE6A3275522B874621E8978 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA4CF0FB1F6232F900A2B8EE /* Build configuration list for PBXNativeTarget "EurekaXcode9" */;
 			buildPhases = (
+				DF25476B90C5B24BBCE34410 /* [CP] Check Pods Manifest.lock */,
 				EA4CF0E51F6232F900A2B8EE /* Sources */,
 				EA4CF0E61F6232F900A2B8EE /* Frameworks */,
 				EA4CF0E71F6232F900A2B8EE /* Resources */,
+				793421418C38BE5234619258 /* [CP] Embed Pods Frameworks */,
+				8E4A561140D6F1CEDB0E4142 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		793421418C38BE5234619258 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EurekaXcode9/Pods-EurekaXcode9-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EurekaXcode9/Pods-EurekaXcode9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E4A561140D6F1CEDB0E4142 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EurekaXcode9/Pods-EurekaXcode9-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF25476B90C5B24BBCE34410 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EurekaXcode9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA4CF0E51F6232F900A2B8EE /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		EA4CF0FC1F6232F900A2B8EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0F65202D9114E9B372C287 /* Pods-EurekaXcode9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		EA4CF0FD1F6232F900A2B8EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6CA3D30DFA2FC494DF2B37D /* Pods-EurekaXcode9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
