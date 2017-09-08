@@ -1,5 +1,5 @@
 use_frameworks!
 
 target 'EurekaXcode9' do
-  pod 'Eureka', git: 'https://github.com/xmartlabs/Eureka', branch: 'feature/Xcode9-Swift3_2'
+  pod 'Eureka', git: 'https://github.com/banjun/Eureka', branch: 'Xcode9-header-footer-height-fix'
 end
